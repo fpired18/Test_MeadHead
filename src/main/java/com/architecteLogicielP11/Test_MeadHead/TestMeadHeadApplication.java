@@ -16,13 +16,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class TestMeadHeadApplication {
 	private static final String POSTS_API_URL = "http://localhost:9010/hospital";
 
-	/*
-	 * demande synchrone CloseableHttpClient httpclient =
-	 * HttpClients.createDefault();
-	 * 
-	 * String requestBody = "{\n" + "specialityRequest\": \"Neurochirurgie\",\n" +
-	 * "latPatient\": \"3.2\",\n"+ "lonPatient\": \"5.8\n"+ "}";
-	 */
 	public static void main(String[] args) throws Exception {
 
 		HttpClient client = HttpClient.newHttpClient();
