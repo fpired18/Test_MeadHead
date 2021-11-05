@@ -25,7 +25,6 @@ class TestMeadHeadApplicationTests {
 		String truePath = "hospital";
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create(String.format("http://localhost:9010/" + truePath))).GET().build();
-
 		try {
 			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 			if (response.statusCode() == 200) {
